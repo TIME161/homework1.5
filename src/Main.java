@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -8,7 +6,6 @@ public class Main {
         task4();
         task5();
     }
-
     public static void task1() {
         System.out.println("Задача 1");
         int number = 5;
@@ -22,7 +19,6 @@ public class Main {
             System.out.println("Ваша система не распознана");
         }
     }
-
     public static void task2() {
         System.out.println("Задача 2");
         int number = 1;
@@ -44,7 +40,6 @@ public class Main {
         else {
                 System.out.println("Ваша система не распознана");}
         }
-
     public static void task3() {
         System.out.println("Задача 3");
         int year = 1896;
@@ -56,7 +51,6 @@ public class Main {
             System.out.println(year + " год не является високосным");}
         else {System.out.println(year + ". год не является високосным");}
 }
-
     public static void task4() {
         System.out.println("Задача 4");
         int deliveryDistance = 45;
@@ -64,11 +58,9 @@ public class Main {
         boolean oneDay = deliveryDistance < 20;
         boolean twoDay = deliveryDistance >= 20 && deliveryDistance < 60;
         boolean threeDay = deliveryDistance < 100 && deliveryDistance >= 60;
-
         if (oneDay) {deliveryDays = 1;}
         else if (twoDay) {deliveryDays = 2;}
         else if (threeDay) {deliveryDays = 3;}
-
         if (oneDay) {
             System.out.println("Потребуется дней: " + deliveryDays);}
         else if (twoDay) {
@@ -78,24 +70,19 @@ public class Main {
         else {
             System.out.println("Доставки нет");}
     }
-
     public static void task5() {
         System.out.println("Задача 5");
         int monthNumber = 12;
         String seazon = "Время года";
-
         boolean winter = monthNumber == 12 || monthNumber == 1 || monthNumber == 2;
         boolean spring = monthNumber == 3 || monthNumber == 4 || monthNumber == 5;
         boolean summer = monthNumber == 6 || monthNumber == 7 || monthNumber == 8;
         boolean autumn = monthNumber == 9 || monthNumber == 10 || monthNumber == 11;
-
              if (winter) {seazon = " Зима.";}
         else if (spring) {seazon = " Весна.";}
         else if (summer) {seazon = " Лето.";}
         else if (autumn) {seazon = " Осень.";}
-
         if (monthNumber <= 12) {
-
             switch (monthNumber) {
                 case 1: {
                     System.out.println(monthNumber + "-й месяц пренадлежит к сезону" + seazon);
