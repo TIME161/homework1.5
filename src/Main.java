@@ -1,7 +1,10 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -39,4 +42,12 @@ public class Main {
         else {
                 System.out.println("Ваша система не распознана");}
         }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        int year = 1951;
+        if ((year % 4 == 0) || (year % 400 == 0)) {
+            System.out.println(year + " год является високосным");}
+            else {System.out.println(year + ". год не является високосным");}
+}
     }
