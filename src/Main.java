@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task2Fix();
         task3();
         task4();
         task5();
@@ -20,7 +21,7 @@ public class Main {
         }
     }
     public static void task2() {
-        System.out.println("Задача 2");
+        System.out.println("Задача 2 с вложенностями");
         int number = 1;
         int clientDeviceYear = 2014;
         if (number == 0 || number == 1) {
@@ -40,6 +41,28 @@ public class Main {
         else {
                 System.out.println("Ваша система не распознана");}
         }
+
+    public static void task2Fix() {
+        System.out.println("Задача 2 без вложенностей");
+        int number = 0;
+        int clientDeviceYear = 2014;
+        boolean young = 2015 < clientDeviceYear;
+        boolean old = 2015 > clientDeviceYear;
+        boolean ios = number == 0;
+        boolean android = number == 1;
+
+        if (ios && old) {
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");}
+        if  (ios && young) {
+                    System.out.println("Установите версию приложения для iOS по ссылке");}
+        if (android && old) {
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");}
+        if (android && young) {
+                    System.out.println("Установите версию приложения для Android по ссылке");}
+        else {
+            System.out.println("Ваша система не распознана");}
+            }
+
     public static void task3() {
         System.out.println("Задача 3");
         int year = 1896;
